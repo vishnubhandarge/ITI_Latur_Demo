@@ -1,0 +1,4 @@
+router-outlet {
+  display: block;
+  flex: 1; /* Take up remaining space */
+}
