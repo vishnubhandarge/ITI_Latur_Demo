@@ -1,0 +1,79 @@
+/* Ensure all navbar items take 100% width */
+.navbar-nav .nav-item {
+  width: 100%;
+}
+
+.dropdown-menu {
+  width: auto; /* Allow flexible width */
+}
+
+/* Display dropdown menus on hover */
+.nav-item.dropdown:hover > .dropdown-menu,
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Hide dropdown submenus when not hovered */
+.dropdown-submenu .dropdown-menu {
+  display: none;
+}
+
+/* Display submenus on hover */
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 100%; /* Position submenus to the right */
+  margin-top: 0; /* Adjust if needed */
+}
+
+/* Vertically align dropdown items */
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Hover effect for all dropdown items */
+.dropdown-item:hover {
+  background-color: black; /* Change background to black */
+  color: white; /* Change text color to white */
+  border-radius: 5px; /* Add small radius to corners */
+}
+
+/* Ensure hover for all nested dropdowns */
+#coursesDropdown:hover > .dropdown-menu,
+#oneYearCoursesDropdown:hover > .dropdown-menu,
+#twoYearCoursesDropdown:hover > .dropdown-menu,
+#syllabusDropdown:hover > .dropdown-menu,
+#syllabusDropdown .dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Maintain padding for submenus */
+.dropdown-submenu .dropdown-item {
+  padding: 10px 20px;
+}
+
+/* Handle longer course names */
+.dropdown-menu .dropdown-item {
+  min-width: 200px; /* Minimum width to accommodate longer names */
+  max-width: 100%; /* Maximum width of the container */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Ensure the background color stays within bounds */
+.dropdown-menu .dropdown-item:hover {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  display: inline-block; /* Ensure proper width */
+  width: auto; /* Adjust width to content */
+}
+
+/* Adjust container width for longer items */
+.container {
+  width: auto; /* Allow flexible width */
+  max-width: 100%; /* Ensure it doesn't exceed the viewport */
+}
