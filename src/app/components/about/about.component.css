@@ -1,0 +1,26 @@
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: #333;
+    font-weight: 600;
+}
+
+.list-unstyled li {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.lead {
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.6;
+} 
